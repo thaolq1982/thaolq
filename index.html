@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Cá Nhân - Lê Quang Thảo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .section-title { @apply text-4xl font-bold text-gray-800 mb-6; }
+    .card { @apply bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105; }
+    .gallery-item { @apply rounded-lg overflow-hidden shadow-md; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-gradient-to-r from-blue-700 to-blue-500 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Lê Quang Thảo</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-200 transition-colors">Trang Chủ</a></li>
+        <li><a href="#extracurricular" class="hover:text-blue-200 transition-colors">Hoạt Động Ngoại Khóa</a></li>
+        <li><a href="#research" class="hover:text-blue-200 transition-colors">Dự Án Nghiên Cứu</a></li>
+        <li><a href="#academic" class="hover:text-blue-200 transition-colors">Hoạt Động Lear Thuật</a></li>
+        <li><a href="#internship" class="hover:text-blue-200 transition-colors">Thực Tập Khoa Học</a></li>
+        <li><a href="#media" class="hover:text-blue-200 transition-colors">Hình Ảnh & Video</a></li>
+        <li><a href="#contact" class="hover:text-blue-200 transition-colors">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-12">
+    <!-- Home -->
+    <section id="home" class="mb-16">
+      <div class="text-center">
+        <h2 class="section-title">Chào Mừng Đến Với Trang Cá Nhân</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Tôi là Lê Quang Thảo, một cá nhân đam mê học thuật, nghiên cứu và các hoạt động cộng đồng. Khám phá hành trình của tôi qua các dự án, hoạt động ngoại khóa và hơn thế nữa.</p>
+      </div>
+    </section>
+
+    <!-- Extracurricular Activities -->
+    <section id="extracurricular" class="mb-16">
+      <h2 class="section-title"><a href="#extracurricular" class="hover:text-blue-600 transition-colors">Hoạt Động Ngoại Khóa</a></h2>
+      <div class="card">
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>2022: Giải nhất cuộc thi ABC - <a href="http://abc.com" class="text-blue-600 hover:underline" target="_blank">abc.com</a></li>
+          <li>2023: Huy chương đồng cuộc thi viết - <a href="http://mns.com" class="text-blue-600 hover:underline" target="_blank">mns.com</a></li>
+        </ul>
+        <h3 class="text-2xl font-semibold mt-6 mb-2 text-gray-800">Hoạt Động Câu Lạc Bộ</h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Chủ tịch câu lạc bộ ABC (2022-2023, 3 tháng)</li>
+          <li>Tham gia nhặt bóng ở sân Hàng Đẫy (12/1/2023 - ..., 1 tuần)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research Projects -->
+    <section id="research" class="mb-16">
+      <h2 class="section-title"><a href="#research" class="hover:text-blue-600 transition-colors">Dự Án Nghiên Cứu</a></h2>
+      <div class="card">
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Nhặt vỏ sò trên bờ biển</li>
+          <li>Đi cuốc đất ở triền núi</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Academic Activities -->
+    <section id="academic" class="mb-16">
+      <h2 class="section-title"><a href="#academic" class="hover:text-blue-600 transition-colors">Hoạt Động Học Thuật</a></h2>
+      <div class="card">
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Tham gia báo cáo hội nghị khoa học 2024</li>
+          <li>Đăng ký sở hữu trí tuệ 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scientific Internship -->
+    <section id="internship" class="mb-16">
+      <h2 class="section-title"><a href="#internship" class="hover:text-blue-600 transition-colors">Thực Tập Khoa Học</a></h2>
+      <div class="card">
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Đi đóng giày ở công ty giày Thượng Đình</li>
+          <li>Kiến tập ở công ty phích nước Rạng Đông</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Media (Images & Videos) -->
+    <section id="media" class="mb-16">
+      <h2 class="section-title"><a href="#media" class="hover:text-blue-600 transition-colors">Hình Ảnh & Video</a></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/400x300" alt="Hình ảnh hoạt động" class="w-full h-48 object-cover">
+          <p class="p-4 text-gray-700">Hình ảnh hoạt động ngoại khóa</p>
+        </div>
+        <!-- Image 2 -->
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/400x300" alt="Hình ảnh nghiên cứu" class="w-full h-48 object-cover">
+          <p class="p-4 text-gray-700">Hình ảnh dự án nghiên cứu</p>
+        </div>
+        <!-- Video -->
+        <div class="gallery-item">
+          <video controls class="w-full h-48 object-cover">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+          </video>
+          <p class="p-4 text-gray-700">Video về hoạt động học thuật</p>
+        </div>
+      </div>
+      <p class="mt-4 text-gray-600">Lưu ý: Đây là các tệp placeholder. Bạn có thể thay thế bằng hình ảnh và video thực tế bằng cách cập nhật đường dẫn src.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-16">
+      <h2 class="section-title"><a href="#contact" class="hover:text-blue-600 transition-colors">Liên Hệ</a></h2>
+      <div class="card">
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Email: <a href="mailto:thaold@yahoo.com" class="text-blue-600 hover:underline">thaold@yahoo.com</a></li>
+          <li>Mobile: <a href="tel:+84978.8888" class="text-blue-600 hover:underline">+84.978.8888</a></li>
+          <li>Website: <a href="https://github.com/thaolq1982/thaolq" class="text-blue-600 hover:underline" target="_blank">github.com/thaolq1982/thaolq</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Lê Quang Thảo. All rights reserved.</p>
+      <p class="mt-2">Designed with <span class="text-red-500">&hearts;</span> using Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Smooth Scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
